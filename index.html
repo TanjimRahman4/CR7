@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo - Capstone Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Tint&display=swap" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('https://c.ndtvimg.com/2024-11/ml1faqbg_cristiano-ronaldo-afp_625x300_26_November_24.jpg?im=FeatureCrop,algorithm=dnn,width=806,height=605') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .stats-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        #ronaldo3 {
+            height: 400px;
+        }
+        #ronaldo2 {
+            height: 400px;
+        }
+        #ronaldo1 {
+            height: 400px;
+        }
+
+        #h1 {
+            color: black;
+            font-weight: bold;
+            font-family: 'Bebas Neue';
+        }
+
+        #p1 {
+            color: black;
+            font: bold;
+            font-family: 'Bebas Neue';
+        }
+
+        .nav-hover:hover {
+            color: #ffc107 !important;
+            transition: color 0.3s ease-in-out;
+        }
+        @keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+#image1 {
+    float: left;
+    height: 200px;
+    animation: slideLeft 6s ease-in-out infinite;
+}
+@keyframes jumpLoop {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-40px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+#siu {
+    height: 290px;
+    animation: jumpLoop 0.9s ease-in-out infinite;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Capstone About Ronaldo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#Stats">Stats</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#Gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#Achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#Sponsars">Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#SocialMedia">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="videoSlideshow" class="carousel slide" data-bs-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video class="d-block w-100" autoplay loop muted playsinline>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted playsinline>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video class="d-block w-100" autoplay loop muted playsinline>
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#videoSlideshow" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#videoSlideshow" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="hero-section">
+        <div>
+            <h1 id="h1" style="font-size: 4rem;">Cristiano Ronaldo 7</h1>
+            <p id="p1" style="font-size: 2rem;">The Legend of Football</p>
+        </div>
+    </div>
+
+    <div class="container my-5" id="About">
+    <img src="knee slide.png" id="image1">
+        <h2 class="text-center" id="h1">About Cristiano Ronaldo</h2>
+        <p class="text-center" id="p1">Cristiano Ronaldo is a Portuguese professional footballer who plays as a forward.
+            Known for his incredible skills, dedication, and achievements, he is considered one of the greatest football
+            players of all time.</p>
+    </div><br><br>
+
+    <div class="stats-section text-center" id="Stats">
+        <div class="container">
+            <img src="siu.png" id="siu">
+            <h2 id="h1">Career Stats</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h3 id="h1">930+</h3>
+                    <p id="p1">Goals Scored</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 id="h1">5</h3>
+                    <p id="p1">Ballon d'Or Awards</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 id="h1">30+</h3>
+                    <p id="p1">Trophies Won</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="Gallery">
+        <h2 class="text-center" id="p1">Gallery</h2>
+        <div class="row mt-4 gallery">
+            <div class="col-md-4">
+                <img src="ronaldo1.jpeg" alt="Ronaldo Image 1" id="ronaldo1">
+            </div>
+            <div class="col-md-4">
+                <img src="ronaldo2.png" alt="Ronaldo Image 2" id="ronaldo2">
+            </div>
+            <div class="col-md-4">
+                <img src="ronaldo3.png" alt="Ronaldo Image 3" id="ronaldo3">
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="Achievements">
+        <h2 class="text-center" id="h1">Achievements</h2>
+        <ul class="list-group mt-4">
+            <li class="list-group-item" id="h1">Top Scorer in UEFA Champions League</li>
+            <li class="list-group-item" id="h1">Most International Goals in Football History</li>
+            <li class="list-group-item" id="h1">Five-Time Ballon d'Or Winner</li>
+            <li class="list-group-item" id="h1">Multiple League Titles in England, Spain, and Italy</li>
+            <li class="list-group-item" id="h1">European Championship Winner with Portugal</li>
+        </ul>
+    </div>
+    <div class="container my-5" id="Sponsars">
+        <h2 class="text-center" id="h1">Sponsors</h2>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <img src="sponsor1.png" alt="Sponsor 1" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+                <img src="sponsor2.png" alt="Sponsor 2" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+                <img src="sponsor3.png" alt="Sponsor 3" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+                <img src="sponsor4.png" alt="Sponsor 4" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container my-5" id="Contact">
+        <h2 class="text-center" id="h1">Contact</h2>
+        <form class="mt-4" action="mailto:mdtanjim2013@gmail.com" method="POST" enctype="text/plain">
+            <div class="mb-3">
+            <label for="name" class="form-label" id="p1">Name</label>
+            <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+            <label for="email" class="form-label" id="p1">Email</label>
+            <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+            <label for="message" class="form-label" id="p1">Message</label>
+            <textarea class="form-control" id="message" name="Message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning" style="transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Send Message</button>
+        </form>
+    </div>
+    <div class="container my-5" id="SocialMedia">
+        <h2 class="text-center" id="h1">Follow Cristiano Ronaldo</h2>
+        <div class="d-flex justify-content-center mt-4">
+            <a href="https://www.facebook.com/Cristiano" target="_blank" class="mx-3">
+                <img src="facebook-icon-dark.png" alt="Facebook" style="width: 50px; height: 50px; border-radius: 20%; transition: transform 0.3s ease-in-out;" onmouseover="this.src='facebook-icon.png'; this.style.transform='scale(1.2)'" onmouseout="this.src='facebook-icon-dark.png'; this.style.transform='scale(1)'">
+            </a>
+            <a href="https://www.instagram.com/cristiano/" target="_blank" class="mx-3">
+                <img src="instagram-icon-dark.png" alt="Instagram" style="width: 50px; height: 50px; border-radius: 20%; transition: transform 0.3s ease-in-out;" onmouseover="this.src='instagram-icon.png'; this.style.transform='scale(1.2)'" onmouseout="this.src='instagram-icon-dark.png'; this.style.transform='scale(1)'">
+            </a>
+            <a href="https://twitter.com/Cristiano" target="_blank" class="mx-3">
+                <img src="X-icon.png" alt="X" style="width: 50px; height: 50px; border-radius: 20%; transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+            </a>
+            <a href="https://www.youtube.com/@cristiano" target="_blank" class="mx-3">
+                <img src="youtube-icon.png" alt="YouTube" style="width: 50px; height: 50px; border-radius: 20%; transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+            </a>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Cristiano Ronaldo Fan Website. All rights reserved.</p>
+            <p>Designed by Tanjim</p>
+                <a href="https://x.com/Rono_football" target="_blank" class="mx-3">
+                    <img src="X-icon.png" alt="X"
+                        style="width: 40px; height: 40px; border-radius: 90%; transition: transform 0.3s ease-in-out;"
+                        onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="https://www.youtube.com/@Rono_footballeditz" target="_blank" class="mx-3">
+                    <img src="youtube-icon.png" alt="YouTube"
+                        style="width: 40px; height: 40px; border-radius: 90%; transition: transform 0.3s ease-in-out;"
+                        onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+                </a>
+                </div>
+        </div>
+    </footer>
+</body>
+
+</html>
